@@ -59,7 +59,7 @@ function convertWordsToNumber(words) {
     return number + currentNumber;
 }
 
-recognition.onresult() = function(event) {
+recognition.onresult = function (event) {
     console.log(event);
 
     content = event.results[0][0].transcript;
